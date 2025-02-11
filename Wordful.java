@@ -5,6 +5,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class Wordful {
+    // starter cide fir Wordle clone
 
     String [] allWords;
     String [] guesses;
@@ -27,24 +28,15 @@ public class Wordful {
         current_word = getRandomWord();
 
         run();
-        /*
-        System.out.println(allWords[0]);
-        System.out.println(allWords[allWords.length-1]);
-        System.out.println("words loaded: " + allWords.length);
-
-        int count = 0;
-        for (String word : allWords) {
-            System.out.println(count+1 + ": " + word);
-            count ++;
-        }
-        */
+     
+        
     }
 
     public void run() {
     }
 
     public String getValidWord() {
-       String guess;
+       String guess="";
         // asks user for a five letter word and checks if it's at least five
         // letters and a real five letter word (using while loop)
        return guess;
@@ -52,7 +44,7 @@ public class Wordful {
 
     public String processWord(String word) {
 
-        String newStr;
+        String newStr="";
         // this method evaluates each letter in user guess and compares to
         // letters in word to show (*) if right letter in right place
         // +, letter in word, wrong place, and -, letter not found in word.)
@@ -65,13 +57,13 @@ public class Wordful {
     }
 
     public String formatWord(String str) {
-        String newStr;
+        String newStr="";
         // this method formats a str with spaces between each letter
         return newStr;
     }
 
     public String getRandomWord() {
-        String word;
+        String word="";
         // this method gets a random word from a list of words
         return word;
     }
@@ -87,7 +79,7 @@ public class Wordful {
     }
 
     public String getNewGuess() {
-        String word;
+        String word="";
         // this method asks user for a five letter word and returns a guess
         return word;
     }
